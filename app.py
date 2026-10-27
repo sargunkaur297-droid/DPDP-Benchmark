@@ -55,15 +55,17 @@ if question:
 
     with st.chat_message("assistant"):
         try:
+            answer_placeholder = st.empty()
             with st.spinner("Searching legal documents and generating an answer..."):
                 answer, hits = query.answer(
                     question,
                     k=top_k,
                     model=model,
                     history=history,
+                    stream_callback=answer_placeholder.markdown,
                 )
 
-            st.markdown(answer)
+            answer_placeholder.markdown(answer)
 
             sources = []
             seen = set()
