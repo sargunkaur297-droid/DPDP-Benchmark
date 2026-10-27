@@ -9,12 +9,8 @@ cd "$ROOT"
 PYTHON_BIN="$(command -v python || command -v python3)"
 export DPDP_WORKER_KIND="${DPDP_WORKER_KIND:-colab}"
 
-# The repository and Colab runtime are private, so the shared worker credential
-# intentionally lives here to keep startup one-command. The coordinator still
-# validates it on every worker connection; public browser access uses separate
-# username/password authentication.
-readonly DEFAULT_DPDP_WORKER_TOKEN="5ecd4ade12ee5be628977b535b77a9a90f2205d980cd5fb8a9629ffd4d6b3abc"
-
+# Never store worker credentials in source control. The coordinator-issued token
+# must be provided via DPDP_WORKER_TOKEN or the Colab Secrets panel.
 # In Colab, automatically read the token from the private Secrets panel. This
 # keeps the normal invocation down to one command and avoids putting the token
 # in notebook output, shell history, or Git.
@@ -32,9 +28,6 @@ PY
 )"
   export DPDP_WORKER_TOKEN
 fi
-
-DPDP_WORKER_TOKEN="${DPDP_WORKER_TOKEN:-$DEFAULT_DPDP_WORKER_TOKEN}"
-export DPDP_WORKER_TOKEN
 
 [[ -n "${DPDP_WORKER_TOKEN:-}" ]] || {
   echo "DPDP_WORKER_TOKEN is missing." >&2
