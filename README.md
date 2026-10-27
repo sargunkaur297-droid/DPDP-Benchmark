@@ -5,7 +5,7 @@
 - **Domain:** Gen AI / NLP / Legal Tech / Data Governance
 - **Developer:** Independent project maintained by the author
 - **Compute:** Google Colab / Kaggle free tier sufficient
-- **Status:** Working pipeline, with baseline results below. The hosted service at [dpdp.hari-pi.com](https://dpdp.hari-pi.com) may be unavailable at times; treat the repository as the source of truth for the implementation.
+- **Status:** Working pipeline, with baseline results below. The hosted service at [dpdp.hari-pi.com](https://dpdp.hari-pi.com) may be unavailable at times; the [Streamlit deployment](https://dpdp-benchmark-xgtha2ute6myxd6ongl2cd.streamlit.app/) is also available when online. Treat the repository as the source of truth for the implementation.
 
 ---
 
@@ -182,16 +182,16 @@ Next:
 9. Baseline across retrievers and LLMs rather than a single configuration
 10. Failure taxonomy and write-up
 
-## Private Colab worker
+## Colab worker
 
 The public UI and durable queue live at [dpdp.hari-pi.com](https://dpdp.hari-pi.com). Colab only supplies outbound LLM/RAG compute, so it does not need ngrok, an inbound port, or a stable Colab URL. If Colab disconnects, the site stays online and queued work waits for the next worker.
 
 One-time setup:
 
-1. Create a GitHub personal access token with read access to this private repository.
-2. In Colab, open the Secrets panel (key icon), add `GITHUB_TOKEN`, and enable notebook access. This is only required because the repository is private.
+1. In Colab, open the Secrets panel (key icon), add `DPDP_WORKER_TOKEN` using the coordinator-issued value, and enable notebook access. The repository is public, so cloning it does not require a GitHub token.
+2. If a worker token was ever committed to source control, rotate it in the coordinator configuration before using the worker again.
 
-After that, open [`colab_worker.ipynb`](colab_worker.ipynb) (or the compatibility notebook [`colab_dpdp.ipynb`](colab_dpdp.ipynb)) from GitHub in Colab and choose **Runtime â†’ Run all**. Each now contains the same single worker cell: it securely clones or refreshes the private repository, installs dependencies, starts Ollama, prepares the corpus/index, and connects the worker to `dpdp.hari-pi.com`. Neither notebook uses ngrok.
+After that, open [`colab_worker.ipynb`](colab_worker.ipynb) (or the compatibility notebook [`colab_dpdp.ipynb`](colab_dpdp.ipynb)) from GitHub in Colab and choose **Runtime â†’ Run all**. Each now contains the same single worker cell: it clones or refreshes the public repository, installs dependencies, starts Ollama, prepares the corpus/index, and connects the worker to `dpdp.hari-pi.com`. Neither notebook uses ngrok.
 
 If the repository is already cloned in a Colab runtime, the equivalent command is simply:
 
