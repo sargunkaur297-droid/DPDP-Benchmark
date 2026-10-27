@@ -1,6 +1,9 @@
-
+import os
 import streamlit as st
-
+try:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+except Exception:
+    pass
 from dpdp_rag import config, query
 
 st.set_page_config(
@@ -17,7 +20,8 @@ st.caption(
 
 with st.sidebar:
     st.header("Settings")
-    model = st.text_input("Ollama chat model", value=config.CHAT_MODEL)
+    model = st.text_input("Groq chat model", value=config.CHAT_MODEL)
+    st.info("Answers use Groq with local sentence-transformer embeddings.")
     top_k = st.slider("Retrieved passages", min_value=1, max_value=20, value=config.TOP_K)
     st.info("Answers are generated using your local DPDP RAG pipeline.")
     if st.button("Clear conversation"):
