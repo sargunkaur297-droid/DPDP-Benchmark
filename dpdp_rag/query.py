@@ -73,8 +73,8 @@ def _retry(
     fn,
     *,
     what: str,
-    attempts: int = 5,
-    base_wait: float = 5.0,
+    attempts: int = 2,
+    base_wait: float = 1.0,
 ):
     """Retry transient API or inference failures with backoff."""
     last = None
@@ -541,6 +541,7 @@ def answer(
     model: str = config.CHAT_MODEL,
     history: list[dict] | None = None,
     progress: ProgressCallback | None = None,
+    stream_callback: Callable[[str], None] | None = None,
 ) -> tuple[str, list[dict]]:
     """Generate a grounded answer and return the passages used."""
     hits = retrieve(question, k, progress=progress)
@@ -592,6 +593,8 @@ def answer(
 
     def generate() -> str:
         parts: list[str] = []
+        if stream_callback is not None:
+            stream_callback("")
         characters = 0
         last_progress = 59
 
@@ -610,6 +613,8 @@ def answer(
             text = chunk.choices[0].delta.content or ""
             parts.append(text)
             characters += len(text)
+            if stream_callback is not None and text:
+                stream_callback("".join(parts))
 
             estimate = min(
                 96,
