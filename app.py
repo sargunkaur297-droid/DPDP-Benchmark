@@ -92,7 +92,8 @@ if question:
         except Exception as exc:
             st.error(f"Could not generate an answer: {exc}")
             st.caption(
-                "Check that Ollama is running, the configured models are "
-                "available, and the ChromaDB index exists."
+                "Check the underlying error above. If it mentions an API key, "
+                "model access, rate limits, or service availability, verify "
+                "your Groq key and selected model in Streamlit Cloud."
             )
 
