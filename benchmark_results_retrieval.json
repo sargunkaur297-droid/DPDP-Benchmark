@@ -1,0 +1,392 @@
+[
+  {
+    "id": "penalty-security-failure",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 2,
+    "noise_ratio": 0.4,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 6",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 6",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13",
+      "DPDP Act 2023 | s. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 12",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary"
+    ]
+  },
+  {
+    "id": "penalty-breach-notice",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.3,
+    "retrieved": [
+      "DPDP Act 2023 | THE SCHEDULE",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "DPDP Act 2023 | s. 27",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 7",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 7",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary"
+    ]
+  },
+  {
+    "id": "breach-72h",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.4,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 7",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 7",
+      "DPDP Act 2023 | s. 8",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 7",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 3",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13"
+    ]
+  },
+  {
+    "id": "consent-manager-networth",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.5,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | FIRST SCHEDULE PART A",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | FIRST SCHEDULE PART B",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 4",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | FIRST SCHEDULE PART A",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | FIRST SCHEDULE PART B",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 4",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | FIRST SCHEDULE PART B",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | FIRST SCHEDULE PART B"
+    ]
+  },
+  {
+    "id": "commencement-phase-3",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.3,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 1",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 1",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | preamble",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | preamble",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | preamble",
+      "DPDP Act 2023 | s. 41",
+      "Commencement Notification G.S.R. 843(E) (13 Nov 2025) | GSR 843(E)",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | preamble",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | SECOND SCHEDULE",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | FIFTH SCHEDULE"
+    ]
+  },
+  {
+    "id": "commencement-in-force-now",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 3,
+    "noise_ratio": 0.0,
+    "retrieved": [
+      "DPDP Act 2023 | s. 38",
+      "DPDP Act 2023 | s. 1",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 1",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "DPDP Act 2023 | s. 40",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | preamble",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "Lok Sabha Q&A AU3960 (12 Aug 2026): Board appointments | QA AU3960"
+    ]
+  },
+  {
+    "id": "corrigendum",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 5,
+    "noise_ratio": 0.2,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 1",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | preamble",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | preamble",
+      "DPDP Act 2023 | s. 44",
+      "Corrigendum G.S.R. 892(E) (10 Dec 2025) | GSR 892(E)",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 1",
+      "DPDP Act 2023 | s. 44",
+      "DPDP Act 2023 | s. 44",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 11",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary"
+    ]
+  },
+  {
+    "id": "board-status",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.3,
+    "retrieved": [
+      "Lok Sabha Q&A AU3960 (12 Aug 2026): Board appointments | QA AU3960",
+      "DPDP Act 2023 | s. 19",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "Lok Sabha Q&A AU3960 (12 Aug 2026): Board appointments | QA AU3960",
+      "Lok Sabha Q&A AU3960 (12 Aug 2026): Board appointments | QA AU3960",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "Board Composition Notification G.S.R. 845(E) (13 Nov 2025) | GSR 845(E)",
+      "DPDP Act 2023 | s. 21"
+    ]
+  },
+  {
+    "id": "consultation-submissions",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 4,
+    "noise_ratio": 0.7,
+    "retrieved": [
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | preamble",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | preamble",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 19",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 18",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 18",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 18",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 19",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | preamble"
+    ]
+  },
+  {
+    "id": "child-consent",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.4,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 10",
+      "DPDP Act 2023 | s. 9",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 10",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 10",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 10",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 10",
+      "DPDP Act 2023 | s. 7",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 10",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8"
+    ]
+  },
+  {
+    "id": "retention-logs",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.3,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Act 2023 | s. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 6",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13"
+    ]
+  },
+  {
+    "id": "erasure-notice-48h",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.2,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 8",
+      "DPDP Act 2023 | s. 12",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "DPDP Act 2023 | s. 12",
+      "DPDP Act 2023 | s. 8",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13",
+      "DPDP Act 2023 | s. 8"
+    ]
+  },
+  {
+    "id": "grievance-window",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.5,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 14",
+      "DPDP Act 2023 | s. 13",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 13",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 13",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8"
+    ]
+  },
+  {
+    "id": "sdf-dpia",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.3,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13",
+      "DPDP Act 2023 | s. 10",
+      "DPDP Act 2023 | s. 10",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Act 2023 | s. 10",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 12",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 12",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8"
+    ]
+  },
+  {
+    "id": "localization-sdf",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 2,
+    "noise_ratio": 0.3,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 15",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13",
+      "DPDP Act 2023 | s. 16",
+      "DPDP Act 2023 | s. 10",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 14",
+      "DPDP Act 2023 | s. 10",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 12",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 13",
+      "DPDP Act 2023 | s. 17",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary"
+    ]
+  },
+  {
+    "id": "def-personal-data",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 2,
+    "noise_ratio": 0.1,
+    "retrieved": [
+      "DPDP Act 2023 | preamble",
+      "DPDP Act 2023 | s. 2",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 2",
+      "DPDP Act 2023 | s. 7",
+      "DPDP Act 2023 | s. 4",
+      "DPDP Act 2023 | s. 5",
+      "DPDP Act 2023 | s. 11",
+      "DPDP Act 2023 | s. 8",
+      "DPDP Act 2023 | s. 5",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary"
+    ]
+  },
+  {
+    "id": "board-inquiry-timeline",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.4,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 19",
+      "DPDP Act 2023 | s. 28",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 18",
+      "DPDP Act 2023 | s. 28",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 19",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "Lok Sabha Q&A AU3960 (12 Aug 2026): Board appointments | QA AU3960",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary"
+    ]
+  },
+  {
+    "id": "appeal-tribunal",
+    "negative": false,
+    "retrieval_hit": true,
+    "retrieval_rank": 1,
+    "noise_ratio": 0.3,
+    "retrieved": [
+      "DPDP Act 2023 | s. 29",
+      "DPDP Act 2023 | s. 29",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 22",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "DPDP Act 2023 | s. 30",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Act 2023 | s. 33",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 21",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 19",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 19"
+    ]
+  },
+  {
+    "id": "neg-gdpr-out-of-scope",
+    "negative": true,
+    "retrieved": [
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 15",
+      "DPDP Act 2023 | s. 16",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "Draft DPDP Rules 2025 (G.S.R. 02(E), 3 Jan 2025) | draft r. 14",
+      "DPDP Act 2023 | s. 11",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 8",
+      "DPDP Act 2023 | s. 6",
+      "MeitY Summary of Submissions on Draft Rules (14 Jan 2026) | summary",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 10",
+      "DPDP Act 2023 | s. 6"
+    ]
+  },
+  {
+    "id": "neg-nonexistent-section",
+    "negative": true,
+    "retrieved": [
+      "DPDP Act 2023 | s. 40",
+      "DPDP Act 2023 | preamble",
+      "DPDP Act 2023 | s. 27",
+      "DPDP Act 2023 | s. 27",
+      "DPDP Act 2023 | s. 40",
+      "DPDP Act 2023 | s. 27",
+      "DPDP Act 2023 | s. 29",
+      "DPDP Act 2023 | s. 43",
+      "DPDP Act 2023 | THE SCHEDULE",
+      "DPDP Act 2023 | THE SCHEDULE"
+    ]
+  },
+  {
+    "id": "neg-no-enforcement-data",
+    "negative": true,
+    "retrieved": [
+      "Board Establishment Notification G.S.R. 844(E) (13 Nov 2025) | GSR 844(E)",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "DSCI FAQ: DPDP Framework \u2014 Data Protection Board (2026) | FAQ",
+      "Board Composition Notification G.S.R. 845(E) (13 Nov 2025) | GSR 845(E)",
+      "DPDP Act 2023 | s. 33",
+      "Lok Sabha Q&A AU4091 (12 Aug 2026): implementation status | QA AU4091",
+      "DPDP Rules 2025 (G.S.R. 846(E), 13 Nov 2025) | r. 1",
+      "DPDP Act 2023 | s. 34"
+    ]
+  }
+]

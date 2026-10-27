@@ -249,3 +249,23 @@ On the next Colab startup, `scripts/start_colab_worker.sh` downloads and
 verifies the cache before Ollama starts. A valid `chroma_db` cache skips the
 expensive fetch/extract/ingest stages; if the cache is missing or invalid,
 startup falls back to the normal setup automatically.
+## Local Benchmark Run — 27 October 2026
+### Retrieval evaluation
+The local retrieval benchmark was run against 18 answerable cases with
+top-k set to 10.
+| Metric | Result |
+|---|---:|
+| Hit rate@10 | 100% (18/18) |
+| Mean Reciprocal Rank (MRR) | 0.79 |
+| Median first-relevant rank | 1 |
+| Worst first-relevant rank | 5 |
+| Non-operative passages in retrieved results | 33% |
+### Configuration and observations
+- Local inference used Ollama with `qwen2.5:7b-instruct`.
+- Embeddings used `nomic-embed-text`.
+- Context and output limits were reduced to accommodate local hardware.
+- The retrieval-only run verifies retrieval performance, not answer correctness.
+- Full answer-quality metrics have not yet been re-run after the prompt changes.
+### Scope
+These results describe one local run on the available benchmark cases.
+They should not be interpreted as a comprehensive legal accuracy evaluation.
