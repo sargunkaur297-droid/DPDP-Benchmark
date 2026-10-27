@@ -268,6 +268,12 @@ Rules:
   immediately unless the retrieved notification explicitly says so.
 - Cite every legal claim using the exact source labels in the context.
   Never invent facts or citations.
+- When explaining Data Fiduciary and Data Processor, prefer the statutory
+  definitions in section 2(i) and section 2(k), respectively, when present
+  in the context. Section 8(1) places compliance responsibility on the Data
+  Fiduciary for processing by it or on its behalf; do not turn this into an
+  unsupported blanket claim that a Data Processor can never have independent
+  liability under any provision of law.
 - If the context genuinely does not establish an answer, say so.
 """
 
@@ -414,6 +420,61 @@ def retrieve(
 
         if overview_hits:
             ranked = overview_hits[:k]
+
+    # Definitions live in section 2. Hybrid search can rank section 8 duties
+    # above the statutory definitions, so prioritize section 2 for definition
+    # questions and comparisons between Data Fiduciaries and Data Processors.
+    asks_definitions = (
+        "section 2" in q_lower
+        or "s. 2" in q_lower
+        or (
+            "data fiduciary" in q_lower
+            and "data processor" in q_lower
+        )
+        or (
+            any(term in q_lower for term in ("define", "definition", "who qualifies"))
+            and any(term in q_lower for term in ("data fiduciary", "data processor"))
+        )
+    )
+
+    if asks_definitions:
+        with _chroma_lock:
+            definitions = col.get(
+                where={"unit": "s. 2"},
+                include=["documents", "metadatas"],
+            )
+
+        definition_hits = []
+        for doc, meta in zip(
+            definitions.get("documents") or [],
+            definitions.get("metadatas") or [],
+        ):
+            source = str(meta.get("source", "")).lower()
+            if meta.get("doc_type") == "act" and "dpdp act 2023" in source:
+                definition_hits.append({"text": doc, "meta": meta})
+
+        if definition_hits:
+            seen = {
+                (
+                    h["meta"].get("source"),
+                    h["meta"].get("unit"),
+                    h["meta"].get("part"),
+                    h["text"][:80],
+                )
+                for h in definition_hits
+            }
+            combined = list(definition_hits)
+            for hit in ranked:
+                key = (
+                    hit["meta"].get("source"),
+                    hit["meta"].get("unit"),
+                    hit["meta"].get("part"),
+                    hit["text"][:80],
+                )
+                if key not in seen:
+                    combined.append(hit)
+                    seen.add(key)
+            ranked = combined[:k]
 
     return ranked
 
