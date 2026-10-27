@@ -92,8 +92,9 @@ def _retry(
             if i < attempts - 1:
                 time.sleep(wait)
 
+    detail = f": {type(last).__name__}: {last}" if last else ""
     raise RuntimeError(
-        f"{what} failed after {attempts} attempts"
+        f"{what} failed after {attempts} attempts{detail}"
     ) from last
 
 
