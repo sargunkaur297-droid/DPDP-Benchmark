@@ -1,4 +1,3 @@
-
 """Configuration for the DPDP RAG pipeline."""
 import os
 from pathlib import Path
@@ -12,6 +11,8 @@ COLLECTION = "dpdp"
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 CHAT_MODEL = "llama-3.3-70b-versatile"
 
+# Conservative prompt budget for the hosted Groq model (not an Ollama setting).
+NUM_CTX = int(os.environ.get("DPDP_NUM_CTX", "32768"))
 MAX_OUTPUT_TOKENS = int(os.environ.get("DPDP_MAX_OUTPUT_TOKENS", "2000"))
 
 CHUNK_SIZE = 900
