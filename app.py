@@ -6,6 +6,13 @@ except Exception:
     pass
 from dpdp_rag import config, query
 
+
+st.set_page_config(
+    page_title="DPDP Act AI Assistant",
+    page_icon="⚖️",
+    layout="wide",
+)
+
 # Streamlit Cloud does not preserve the local Chroma index from development.
 # Build it from the committed source documents the first time the app starts.
 @st.cache_resource
@@ -26,12 +33,6 @@ try:
 except Exception as exc:
     st.error(f"Could not build the legal document index: {exc}")
     st.stop()
-
-st.set_page_config(
-    page_title="DPDP Act AI Assistant",
-    page_icon="⚖️",
-    layout="wide",
-)
 
 st.title("⚖️ DPDP Act AI Assistant")
 st.caption(
