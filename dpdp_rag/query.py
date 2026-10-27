@@ -374,7 +374,48 @@ def retrieve(
 
     _report(progress, "Ranking the strongest sources", 48)
 
-    return _hybrid_rerank(question, dense, bm25, k)
+    ranked = _hybrid_rerank(question, dense, bm25, k)
+
+    q_lower = question.lower()
+    asks_overview = (
+        any(phrase in q_lower for phrase in ("what is", "define", "explain"))
+        and any(term in q_lower for term in ("dpdp", "digital personal data protection"))
+    )
+
+    if asks_overview:
+        with _chroma_lock:
+            opening = col.get(
+                where={"unit": "preamble"},
+                include=["documents", "metadatas"],
+            )
+
+        overview_hits = []
+        for doc, meta in zip(
+            opening.get("documents") or [],
+            opening.get("metadatas") or [],
+        ):
+            source = str(meta.get("source", "")).lower()
+            if "act" in source and "rule" not in source:
+                overview_hits.append({"text": doc, "meta": meta})
+
+        seen = {
+            (h["meta"].get("source"), h["meta"].get("unit"), h["text"][:80])
+            for h in overview_hits
+        }
+        for hit in ranked:
+            key = (
+                hit["meta"].get("source"),
+                hit["meta"].get("unit"),
+                hit["text"][:80],
+            )
+            if key not in seen:
+                overview_hits.append(hit)
+                seen.add(key)
+
+        if overview_hits:
+            ranked = overview_hits[:k]
+
+    return ranked
 
 
 def _gpu_dense_search(
