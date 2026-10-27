@@ -1,5 +1,6 @@
 chromadb>=0.5
 groq
+ollama>=0.3
 sentence-transformers
 pypdf>=4.0
 fastapi>=0.110
