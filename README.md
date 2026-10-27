@@ -1,6 +1,6 @@
 # DPDPA-Bench
 
-**First open benchmark and evaluation harness for faithful RAG over Indian data-protection law â€” answers grounded in the DPDP Act with clause-level citations, scored for retrieval accuracy, citation correctness and abstention. A compliance checker that maps a plain-English business description onto applicable obligations is the next milestone.**
+**An experimental benchmark and retrieval-augmented generation (RAG) prototype for question answering over India's Digital Personal Data Protection Act (DPDP Act) and related Rules. It evaluates retrieval, factual coverage, citations and abstention; the compliance-checker workflow remains planned work.**
 
 - **Domain:** Gen AI / NLP / Legal Tech / Data Governance
 - **Developer:** Independent project maintained by the author
