@@ -6,6 +6,27 @@ except Exception:
     pass
 from dpdp_rag import config, query
 
+# Streamlit Cloud does not preserve the local Chroma index from development.
+# Build it from the committed source documents the first time the app starts.
+@st.cache_resource
+def ensure_index():
+    count = query.warmup()
+    if count == 0:
+        from dpdp_rag import ingest
+        ingest.main(reset=False)
+        count = query.warmup()
+    return count
+
+try:
+    with st.spinner("Checking the legal document index..."):
+        indexed_chunks = ensure_index()
+    if indexed_chunks == 0:
+        st.error("The legal index is empty. Check that the source text files are present in the repository.")
+        st.stop()
+except Exception as exc:
+    st.error(f"Could not build the legal document index: {exc}")
+    st.stop()
+
 st.set_page_config(
     page_title="DPDP Act AI Assistant",
     page_icon="⚖️",
