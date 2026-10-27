@@ -41,6 +41,17 @@ These answer-quality figures are a historical baseline for the 15 answerable cas
 `scripts/benchmark.py` (`neg-gdpr-out-of-scope`, `neg-nonexistent-section`,
 `neg-no-enforcement-data`) but are not part of this committed run.
 
+### Tests
+
+The regression tests use mocked retrieval results and do not call a hosted LLM:
+
+```sh
+python -m pip install -e ".[dev]"
+python -m pytest
+```
+
+They cover Section 2 definition prioritisation, Section 8 retrieval, expected-citation scoring, and refusal on an unanswerable question. These are regression checks, not proof of legal correctness or production readiness.
+
 ### Regenerating
 
 ```sh
