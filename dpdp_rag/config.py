@@ -9,7 +9,7 @@ DB_DIR = ROOT / "chroma_db"
 COLLECTION = "dpdp"
 
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-CHAT_MODEL = "llama-3.3-70b-versatile"
+CHAT_MODEL = "openai/gpt-oss-120b"
 
 # Conservative prompt budget for the hosted Groq model (not an Ollama setting).
 NUM_CTX = int(os.environ.get("DPDP_NUM_CTX", "32768"))
