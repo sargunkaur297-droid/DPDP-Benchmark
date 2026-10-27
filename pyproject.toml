@@ -1,13 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "dpdp-rag"
 version = "0.1.0"
-description = "RAG chatbot over the DPDP Act 2023 and DPDP Rules 2025 with section-level citations"
+description = "Experimental RAG question-answering prototype over India's DPDP Act and Rules"
 requires-python = ">=3.11"
 dependencies = [
     "chromadb>=0.5",
+    "fastapi>=0.110",
+    "groq",
     "ollama>=0.3",
     "pypdf>=4.0",
+    "requests>=2.31",
+    "sentence-transformers",
+    "streamlit",
+    "uvicorn>=0.29",
 ]
+
+[project.optional-dependencies]
+charts = ["pandas>=2.0", "matplotlib>=3.8"]
+dev = ["pytest>=8.0"]
 
 [tool.setuptools]
 packages = ["dpdp_rag"]
