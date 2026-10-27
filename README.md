@@ -23,16 +23,16 @@ Baseline over the answerable question set in `benchmark_results.json`:
 | Ungrounded citations | 1 |
 | Non-operative share of retrieved text | 34% mean |
 
-Retrieval is not the bottleneck. The expected clause is retrieved for every
-question and ranks first for 10 of the 15. The gap is citation discipline: the
-answer is usually right, but roughly a quarter of the time it does not cite the
-clause the answer rests on.
+In this small historical run, the expected clause was retrieved for all 15
+questions and ranked first for 10. Citation discipline was weaker: about a
+quarter of answers did not cite the expected clause. This is a useful signal for
+follow-up testing, not a general claim that retrieval is solved.
 
 Context quality looks like the lever. The four questions that missed the expected
-citation carry a mean 50% non-operative share, against 28% for the eleven that
-cited correctly â€” draft rules, FAQs and consultation summaries crowding out the
-operative provisions. Biasing retrieval toward operative law is the next thing
-to try.
+citation carried a mean 50% non-operative share, against 28% for the eleven
+that cited correctly. This suggests testing authority-weighted retrieval and
+operative-source filtering as controlled comparisons rather than assuming one
+configuration is already optimal.
 
 The one factual miss (`commencement-in-force-now`) does not fit that pattern: its
 retrieved context was 0% non-operative, so it needs a separate look.
@@ -74,8 +74,8 @@ The practical gap founders actually face: they don't ask "what does Section 6 sa
 ## 2. Research gap
 
 - This project explores evaluation of legal RAG using clause retrieval, expected-citation checks and abstention. The claim that no comparable public benchmark exists has not been established by an exhaustive literature review.
-- Existing legal-QA benchmarks focus on US/EU law (EU AI Act, GDPR, case law). DPDPA is untouched.
-- Existing RAG eval metrics emphasize answer relevance; legal QA additionally needs **citation accuracy** and **abstention quality** â€” no standard harness measures these together.
+- This project focuses on Indian DPDP Act question answering; the extent of coverage in other public legal-QA datasets has not been exhaustively surveyed.
+- In addition to answer relevance, legal QA benefits from measuring **citation accuracy** and **abstention quality**. This prototype includes checks for both, but does not claim they are a universal standard.
 - A useful next step is to compare this harness with existing legal-QA and RAG evaluation datasets, then document the differences.
 
 ## 3. The contribution (the real deliverable)
